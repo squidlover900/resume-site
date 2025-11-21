@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #111;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 1.75rem 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  color: black;
+  font-size: clamp(1.2rem, 1.5vw, 2rem);
+}
+
+.nav-bar li a:hover {
+  opacity: 0.6;
+}
+
+main {
+  padding-top: 4.5rem;
+}
+
+.section {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.section-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.73rem;
+  margin-bottom: 1rem;
+}
+
+.section__content {
+  flex: 1;
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#image-intro {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#image-intro img {
+  max-width: 95%;
+}
+
+.section ul {
+  margin-left: 1.3rem;
+  padding-left: 0;
+  list-style-position: outside;
+  text-align: left;
+}
+
+.section li {
+  margin: 0.25rem 0;
+  font-size: 1.05rem;
+}
+
+.edu-entry {
+  margin-bottom: 4.5rem;
+}
+
+.intro-entry {
+  margin-bottom: 4rem;
+}
+
+.back-to-top {
+  position: fixed;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  z-index: 1500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.back-to-top button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 32%;
+  background: mediumpurple;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.section:first-of-type ~ .back-to-top {
+  opacity: 1;
+}
