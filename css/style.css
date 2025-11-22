@@ -80,6 +80,10 @@ main {
   padding: 4rem 0;
 }
 
+.section--intro {
+    margin-top: 0;
+}
+
 .section-inner {
   max-width: 1000px;
   margin: 0 auto;
